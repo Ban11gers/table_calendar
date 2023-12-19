@@ -603,8 +603,8 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
             rangeHighlight = Center(
               child: Container(
                 margin: EdgeInsetsDirectional.only(
-                  start: isRangeStart && !isRangeEnd ? constraints.maxWidth * 0.5 : 0.0,
-                  end: isRangeEnd && !isRangeStart ? constraints.maxWidth * 0.5 : 0.0,
+                  start: isRangeStart ? constraints.maxWidth * 0.5 : 0.0,
+                  end: isRangeEnd ? constraints.maxWidth * 0.5 : 0.0,
                 ),
                 height: (shorterSide - widget.calendarStyle.cellMargin.vertical) *
                     widget.calendarStyle.rangeHighlightScale,
